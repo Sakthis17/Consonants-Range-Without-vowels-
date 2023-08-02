@@ -1,0 +1,45 @@
+PRINTING CONCONANTS FROM RANGE(without vowels):
+accepts the consonants from intial to final value without vowels
+
+INPUT:
+a z
+
+OUTPUT:
+b c d fg h  j k l m n p q r s t v w y z.
+
+INPUT:
+v h
+
+OUTPUT:
+v t s r q p n m l k j h
+
+JAVA PROGRAM:
+import java.util.*;
+public class consonants{
+public static void main(String args[])
+{
+ Scanner sc =new Scanner(System.in);
+ char ch1=sc.next().charAt(0);
+ char ch2=sc.next().charAt(0);
+ if(ch1<ch2)
+ {
+ for(;ch1<=ch2;ch1++)
+ {
+ if("aeiou".indexOf(ch1)<0)
+ {
+ System.out.print(ch1+" ");
+ }
+ }
+ }
+ else
+ {
+ for(;ch1>=ch2;ch1--)
+ {
+ if("aeiou".indexOf(ch1)<0)
+ {
+ System.out.print(ch1=" ");
+ }
+ }
+ }
+ }
+ }
